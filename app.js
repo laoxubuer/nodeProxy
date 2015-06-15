@@ -8,7 +8,7 @@ var express = require('express'),
 // 设置配置项
 app.set('config', {
 	'views': __dirname + '/views',
-	'mock': false,
+	'mock': true,
 	'mockData': __dirname + '/mock',
 });
 
