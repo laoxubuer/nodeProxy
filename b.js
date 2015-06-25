@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(function(req, res){
 	res.json({
 		status: 0,
-		data:'成功'
+		data:[{'name':'小红','age':'28','sex':'男'}]
 	})
 })
 app.listen(4000);

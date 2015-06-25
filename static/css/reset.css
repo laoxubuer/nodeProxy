@@ -1,0 +1,16 @@
+html{font-size:62.5%; /* 10÷16=62.5% */}
+body{ font-family: 'facitweb', 'Lucida Grande', 'Arial', sans-serif;color:#4c4c4c;margin:0px;padding:0px;background: #fff}
+ul,ol{list-style:none;padding:0px;margin:0;}
+h1, h2, h3, h4, h5, h6, form, div, p, i, img, ul, li, ol, table, tr, td, fieldset, label, legend,dt,dd,dl, em,i,button{margin:0;padding:0;}
+section, article, aside, header, footer, nav, dialog, figure,figcaption {display:block;}
+figure {margin:0;}
+img {border:0; vertical-align: middle; max-width: 100%;}
+a {text-decoration:none;text-decoration:none;cursor:pointer;outline-color:-moz-use-text-color;
+outline-style:none;outline-width:0;text-decoration:none;-moz-outline:none;outline:none;ie-dummy:expression(this.hideFocus=true);}
+a:hover {text-decoration:none;}
+button {cursor:pointer;}
+fieldset,form{ background:none; border:none; padding:0; margin:0;}
+input, button{outline: none;}
+i{font-style: normal;}
+
+body,html{height: 100%;width: 100%; overflow: hidden; min-height: 320px;}

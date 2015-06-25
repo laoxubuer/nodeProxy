@@ -6,10 +6,16 @@ var express = require('express'),
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(function(req, res){
+app.use('/c', function(req, res){
 	res.json({
 		status: 0,
 		data:[{'name':'小明','age':'28','sex':'男'}]
+	})
+})
+app.use('/b', function(req, res){
+	res.json({
+		status: 0,
+		data:[{'name':'小红','age':'28','sex':'男'}]
 	})
 })
 app.listen(4000);

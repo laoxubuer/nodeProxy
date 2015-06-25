@@ -5,10 +5,11 @@ var express = require('express'),
 	app = express(),
 	port = process.env.PORT || 30010;
 
+
+
 // 设置配置项
 app.set('config', {
 	'views': __dirname + '/views',
-	'mock': true,
 	'mockData': __dirname + '/mock',
 });
 

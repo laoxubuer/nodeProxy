@@ -6,11 +6,26 @@
 </head>
 <body>
 	<h1>Hello Every User</h1>
-	{% for key in data %}
-	  <li>{{key.name}}</li>
-	  <li>{{key.age}}</li>
-	  <li>{{key.sex}}</li>
-	{% endfor %}
+	{% set xiaoMing = data[0] %}
+	{% set xiaoHong = data[1] %}
+	<p>{{xiaoMing|json}}</p>
+	<ul>
+		{% for key in xiaoMing.data %}
+			<li>{{key.name}}</li>
+			<li>{{key.age}}</li>
+			<li>{{key.sex}}</li>
+		{% endfor %}
+	</ul>
+	<p>{{xiaoHong|json}}</p>
+	<ul>
+		{% for key in xiaoHong.data %}
+			<li>{{key.name}}</li>
+			<li>{{key.age}}</li>
+			<li>{{key.sex}}</li>
+		{% endfor %}
+	</ul>
+
+
 	<input type="button" value="发送一个post请求">
 </body>
 <script type="text/javascript" src="/static/js/lib/jquery.js"></script>
