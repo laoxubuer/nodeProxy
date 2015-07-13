@@ -1,7 +1,4 @@
 {
 	"status": 1,
-	"data": [{
-		"name":"小明"
-	}],
-	"message": "联系人ID不能为空"
+	"data":[{"name":"小明","age":"28","sex":"男"}]
 }

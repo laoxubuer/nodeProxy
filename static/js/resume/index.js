@@ -71,7 +71,6 @@ $(function(){
 
 		// 如果滑动到最后一页
 		if(pageIndex >= sectionSize-1){
-			console.log(1111)
 			pageIndex = sectionSize-2
 		}
 
