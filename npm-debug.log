@@ -1,0 +1,365 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'pm2' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'pm2', null ]
+7 verbose cache add spec pm2
+8 silly cache add parsed spec { raw: 'pm2',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'pm2',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed pm2@*
+10 verbose addNamed "*" is a valid semver range for pm2
+11 silly addNameRange { name: 'pm2', range: '*', hasData: false }
+12 silly mapToRegistry name pm2
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/pm2
+16 verbose addNameRange registry:https://registry.npmjs.org/pm2 not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/pm2
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 15:43:54
+20 verbose request id 4bcd27f269a5445d
+21 http request GET https://registry.npmjs.org/pm2
+22 http 200 https://registry.npmjs.org/pm2
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"2G8UO33Q4DDNQ4IQOOKIB2UIX"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '335292',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Thu, 20 Aug 2015 07:43:55 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-hkg6824-HKG',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1440056634.938636,VS0,VE234',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving pm2 to /Users/boyn/.npm/registry.npmjs.org/pm2/.cache.json
+25 silly addNameRange number 2 { name: 'pm2', range: '*', hasData: true }
+26 silly addNameRange versions [ 'pm2',
+26 silly addNameRange   [ '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.4.2',
+26 silly addNameRange     '0.4.3',
+26 silly addNameRange     '0.4.4',
+26 silly addNameRange     '0.4.5',
+26 silly addNameRange     '0.4.6',
+26 silly addNameRange     '0.4.7',
+26 silly addNameRange     '0.4.8',
+26 silly addNameRange     '0.4.10',
+26 silly addNameRange     '0.4.11',
+26 silly addNameRange     '0.4.12',
+26 silly addNameRange     '0.4.13',
+26 silly addNameRange     '0.4.14',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.5.1',
+26 silly addNameRange     '0.5.2',
+26 silly addNameRange     '0.5.3',
+26 silly addNameRange     '0.5.4',
+26 silly addNameRange     '0.5.5',
+26 silly addNameRange     '0.5.6',
+26 silly addNameRange     '0.5.7',
+26 silly addNameRange     '0.6.2',
+26 silly addNameRange     '0.6.3',
+26 silly addNameRange     '0.6.4',
+26 silly addNameRange     '0.6.5',
+26 silly addNameRange     '0.6.6',
+26 silly addNameRange     '0.6.7',
+26 silly addNameRange     '0.6.8',
+26 silly addNameRange     '0.6.9',
+26 silly addNameRange     '0.6.10',
+26 silly addNameRange     '0.6.11',
+26 silly addNameRange     '0.6.12',
+26 silly addNameRange     '0.6.13',
+26 silly addNameRange     '0.6.14',
+26 silly addNameRange     '0.6.15',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.7.1',
+26 silly addNameRange     '0.7.2',
+26 silly addNameRange     '0.7.3',
+26 silly addNameRange     '0.7.4',
+26 silly addNameRange     '0.7.5',
+26 silly addNameRange     '0.7.6',
+26 silly addNameRange     '0.7.7',
+26 silly addNameRange     '0.7.8',
+26 silly addNameRange     '0.8.0',
+26 silly addNameRange     '0.8.1',
+26 silly addNameRange     '0.8.2',
+26 silly addNameRange     '0.8.3',
+26 silly addNameRange     '0.8.4',
+26 silly addNameRange     '0.8.5',
+26 silly addNameRange     '0.8.6',
+26 silly addNameRange     '0.8.7',
+26 silly addNameRange     '0.8.8',
+26 silly addNameRange     '0.8.9',
+26 silly addNameRange     '0.8.10',
+26 silly addNameRange     '0.8.11',
+26 silly addNameRange     '0.8.12',
+26 silly addNameRange     '0.8.13',
+26 silly addNameRange     '0.8.14',
+26 silly addNameRange     '0.8.15',
+26 silly addNameRange     '0.9.0',
+26 silly addNameRange     '0.9.1',
+26 silly addNameRange     '0.9.2',
+26 silly addNameRange     '0.9.3',
+26 silly addNameRange     '0.9.4',
+26 silly addNameRange     '0.9.5',
+26 silly addNameRange     '0.9.6',
+26 silly addNameRange     '0.10.0-beta1',
+26 silly addNameRange     '0.10.0-beta2',
+26 silly addNameRange     '0.10.0-beta4',
+26 silly addNameRange     '0.10.0-beta5',
+26 silly addNameRange     '0.10.0-beta6',
+26 silly addNameRange     '0.10.0-beta7',
+26 silly addNameRange     '0.10.0-beta8',
+26 silly addNameRange     '0.10.0-beta9',
+26 silly addNameRange     '0.10.0-beta10',
+26 silly addNameRange     '0.10.0-beta11',
+26 silly addNameRange     '0.10.0-beta12',
+26 silly addNameRange     '0.10.0-beta13',
+26 silly addNameRange     '0.10.0-beta14',
+26 silly addNameRange     '0.10.0-beta15',
+26 silly addNameRange     '0.10.0-beta16',
+26 silly addNameRange     '0.10.0-beta17',
+26 silly addNameRange     '0.10.0-beta18',
+26 silly addNameRange     '0.10.0-beta19',
+26 silly addNameRange     '0.10.0-beta20',
+26 silly addNameRange     '0.10.0-beta21',
+26 silly addNameRange     '0.10.0-beta22',
+26 silly addNameRange     '0.10.0-beta23',
+26 silly addNameRange     '0.10.0-beta25',
+26 silly addNameRange     '0.10.0',
+26 silly addNameRange     '0.10.1',
+26 silly addNameRange     '0.10.2',
+26 silly addNameRange     '0.10.3',
+26 silly addNameRange     '0.10.4',
+26 silly addNameRange     '0.10.5',
+26 silly addNameRange     '0.10.6',
+26 silly addNameRange     '0.10.7',
+26 silly addNameRange     '0.10.8',
+26 silly addNameRange     '0.11.0-beta1',
+26 silly addNameRange     '0.11.0',
+26 silly addNameRange     '0.11.1',
+26 silly addNameRange     '0.12.0',
+26 silly addNameRange     '0.12.1',
+26 silly addNameRange     '0.12.2',
+26 silly addNameRange     '0.12.3',
+26 silly addNameRange     '0.12.4',
+26 silly addNameRange     '0.12.5',
+26 silly addNameRange     '0.12.6',
+26 silly addNameRange     '0.12.7',
+26 silly addNameRange     '0.12.8',
+26 silly addNameRange     '0.12.9',
+26 silly addNameRange     '0.12.10',
+26 silly addNameRange     '0.12.11',
+26 silly addNameRange     '0.12.12',
+26 silly addNameRange     '0.12.13',
+26 silly addNameRange     '0.12.14',
+26 silly addNameRange     '0.12.15',
+26 silly addNameRange     '0.12.16',
+26 silly addNameRange     '0.14.0',
+26 silly addNameRange     '0.14.1',
+26 silly addNameRange     '0.14.2',
+26 silly addNameRange     '0.14.3',
+26 silly addNameRange     '0.14.4',
+26 silly addNameRange     '0.14.5',
+26 silly addNameRange     '0.14.6',
+26 silly addNameRange     '0.14.7' ] ]
+27 silly addNamed pm2@0.14.7
+28 verbose addNamed "0.14.7" is a plain semver version for pm2
+29 silly mapToRegistry name pm2
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/pm2
+33 verbose addRemoteTarball https://registry.npmjs.org/pm2/-/pm2-0.14.7.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/pm2/-/pm2-0.14.7.tgz',
+34 verbose addRemoteTarball   'dca50d5f526f7856eaecf10d8d4520276443467c' ]
+35 info retry fetch attempt 1 at 15:43:55
+36 info attempt registry request try #1 at 15:43:55
+37 http fetch GET https://registry.npmjs.org/pm2/-/pm2-0.14.7.tgz
+38 http fetch 200 https://registry.npmjs.org/pm2/-/pm2-0.14.7.tgz
+39 silly fetchAndShaCheck shasum dca50d5f526f7856eaecf10d8d4520276443467c
+40 verbose addTmpTarball /var/folders/gm/_7gd6wgd24n5x5mbfl_rn9nw0000gn/T/npm-38006-8cac8eef/registry.npmjs.org/pm2/-/pm2-0.14.7.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for pm2@0.14.7
+42 silly cache afterAdd pm2@0.14.7
+43 verbose afterAdd /Users/boyn/.npm/pm2/0.14.7/package/package.json not in flight; writing
+44 verbose afterAdd /Users/boyn/.npm/pm2/0.14.7/package/package.json written
+45 silly install resolved [ { name: 'pm2',
+45 silly install resolved     preferGlobal: 'true',
+45 silly install resolved     version: '0.14.7',
+45 silly install resolved     engines: { node: '>=0.10' },
+45 silly install resolved     directories: { bin: './bin', lib: './lib', example: './examples' },
+45 silly install resolved     author:
+45 silly install resolved      { name: 'Strzelewicz Alexandre',
+45 silly install resolved        email: 'as@unitech.io',
+45 silly install resolved        url: 'https://keymetrics.io' },
+45 silly install resolved     maintainers: [ [Object], [Object] ],
+45 silly install resolved     contributors:
+45 silly install resolved      [ [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object],
+45 silly install resolved        [Object] ],
+45 silly install resolved     homepage: 'https://github.com/Unitech/pm2',
+45 silly install resolved     description: 'Production process manager for Node.JS applications with a built-in load balancer.',
+45 silly install resolved     main: 'index.js',
+45 silly install resolved     scripts: { test: 'PM2_CONCURRENT_ACTIONS=1 NODE_ENV=test bash test/pm2_programmatic_tests.sh && NODE_ENV=test bash test/pm2_behavior_tests.sh' },
+45 silly install resolved     keywords:
+45 silly install resolved      [ 'cli',
+45 silly install resolved        'fault tolerant',
+45 silly install resolved        'sysadmin',
+45 silly install resolved        'tools',
+45 silly install resolved        'pm2',
+45 silly install resolved        'logs',
+45 silly install resolved        'log',
+45 silly install resolved        'json',
+45 silly install resolved        'express',
+45 silly install resolved        'hapi',
+45 silly install resolved        'kraken',
+45 silly install resolved        'reload',
+45 silly install resolved        'microservice',
+45 silly install resolved        'programmatic',
+45 silly install resolved        'harmony',
+45 silly install resolved        'node-pm2',
+45 silly install resolved        'production',
+45 silly install resolved        'keymetrics',
+45 silly install resolved        'node.js monitoring',
+45 silly install resolved        'strong-pm',
+45 silly install resolved        'deploy',
+45 silly install resolved        'deployment',
+45 silly install resolved        'daemon',
+45 silly install resolved        'supervisor',
+45 silly install resolved        'nodemon',
+45 silly install resolved        'pm2.io',
+45 silly install resolved        'ghost',
+45 silly install resolved        'ghost production',
+45 silly install resolved        'monitoring',
+45 silly install resolved        'process manager',
+45 silly install resolved        'forever',
+45 silly install resolved        'profiling',
+45 silly install resolved        'probes',
+45 silly install resolved        'forever-monitor',
+45 silly install resolved        'keep process alive',
+45 silly install resolved        'process configuration',
+45 silly install resolved        'clustering',
+45 silly install resolved        'cluster cli',
+45 silly install resolved        'cluster',
+45 silly install resolved        'cron',
+45 silly install resolved        'devops',
+45 silly install resolved        'dev ops' ],
+45 silly install resolved     bin: { pm2: './bin/pm2', 'pm2-dev': './bin/pm2-dev' },
+45 silly install resolved     dependencies:
+45 silly install resolved      { async: '1.4.2',
+45 silly install resolved        chalk: '1.0.0',
+45 silly install resolved        chokidar: '^1.0.0',
+45 silly install resolved        'cli-table': '0.3.1',
+45 silly install resolved        'coffee-script': '1.9.3',
+45 silly install resolved        colors: '1.1.2',
+45 silly install resolved        commander: '2.8.1',
+45 silly install resolved        cron: '1.0.9',
+45 silly install resolved        debug: '2.2.0',
+45 silly install resolved        eventemitter2: '0.4.14',
+45 silly install resolved        moment: '2.10.6',
+45 silly install resolved        nssocket: '0.5.3',
+45 silly install resolved        pidusage: '0.1.1',
+45 silly install resolved        pmx: 'latest',
+45 silly install resolved        vizion: 'latest',
+45 silly install resolved        'pm2-axon': 'latest',
+45 silly install resolved        'pm2-axon-rpc': '0.3.6',
+45 silly install resolved        'pm2-deploy': 'latest',
+45 silly install resolved        'pm2-multimeter': '0.1.2',
+45 silly install resolved        'safe-clone-deep': '1.0.5',
+45 silly install resolved        babel: '^5.x',
+45 silly install resolved        shelljs: '0.5.1',
+45 silly install resolved        isbinaryfile: '^2.0.3',
+45 silly install resolved        blessed: '0.1.61',
+45 silly install resolved        semver: '5.0.1',
+45 silly install resolved        'pm2-logs': '~0.1.1',
+45 silly install resolved        ikt: 'git+http://ikt.pm2.io/ikt.git#master' },
+45 silly install resolved     devDependencies:
+45 silly install resolved      { mocha: '^1.20.1',
+45 silly install resolved        should: '^4.0.0',
+45 silly install resolved        'better-assert': '^1.0.0',
+45 silly install resolved        punt: '*' },
+45 silly install resolved     optionalDependencies:
+45 silly install resolved      { 'pm2-logs': '~0.1.1',
+45 silly install resolved        ikt: 'git+http://ikt.pm2.io/ikt.git#master' },
+45 silly install resolved     bugs: { url: 'https://github.com/Unitech/pm2/issues' },
+45 silly install resolved     repository: { type: 'git', url: 'git://github.com/Unitech/pm2.git' },
+45 silly install resolved     license: 'AGPL-3.0',
+45 silly install resolved     gitHead: 'bc30bda25a23cb39a1dda6dc848cc8c98e867779',
+45 silly install resolved     _id: 'pm2@0.14.7',
+45 silly install resolved     _shasum: 'dca50d5f526f7856eaecf10d8d4520276443467c',
+45 silly install resolved     _from: 'pm2@*',
+45 silly install resolved     _npmVersion: '2.11.3',
+45 silly install resolved     _nodeVersion: '0.12.7',
+45 silly install resolved     _npmUser: { name: 'jshkurti', email: 'jonishkurti90@gmail.com' },
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: 'dca50d5f526f7856eaecf10d8d4520276443467c',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/pm2/-/pm2-0.14.7.tgz' },
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/pm2/-/pm2-0.14.7.tgz' } ]
+46 info install pm2@0.14.7 into /usr/local/lib
+47 info installOne pm2@0.14.7
+48 verbose installOne of pm2 to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/boyn/.npm/_locks/pm2-d247c27dec6aa07b.lock for /usr/local/lib/node_modules/pm2
+50 silly install write writing pm2 0.14.7 to /usr/local/lib/node_modules/pm2
+51 verbose unbuild lib/node_modules/pm2
+52 silly gentlyRm /usr/local/lib/node_modules/pm2 is being purged from base /usr/local
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/pm2
+54 verbose tar unpack /Users/boyn/.npm/pm2/0.14.7/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/pm2
+56 silly gentlyRm /usr/local/lib/node_modules/pm2 is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/pm2
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 error tar.unpack untar error /Users/boyn/.npm/pm2/0.14.7/package.tgz
+60 verbose unlock done using /Users/boyn/.npm/_locks/pm2-d247c27dec6aa07b.lock for /usr/local/lib/node_modules/pm2
+61 verbose fstream_path /usr/local/lib/node_modules/pm2
+62 verbose fstream_type Directory
+63 verbose fstream_class DirWriter
+64 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/pm2'
+64 verbose stack     at Error (native)
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+65 verbose fstream_stack FSReqWrap.oncomplete (fs.js:95:15)
+66 verbose cwd /Applications/myproject/nodeProxy
+67 error Darwin 14.1.1
+68 error argv "node" "/usr/local/bin/npm" "install" "-g" "pm2"
+69 error node v0.12.7
+70 error npm  v2.11.3
+71 error path /usr/local/lib/node_modules/pm2
+72 error code EACCES
+73 error errno -13
+74 error Error: EACCES, mkdir '/usr/local/lib/node_modules/pm2'
+74 error     at Error (native)
+74 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/pm2']
+74 error   errno: -13,
+74 error   code: 'EACCES',
+74 error   path: '/usr/local/lib/node_modules/pm2',
+74 error   fstream_type: 'Directory',
+74 error   fstream_path: '/usr/local/lib/node_modules/pm2',
+74 error   fstream_class: 'DirWriter',
+74 error   fstream_stack:
+74 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+74 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+74 error      'FSReqWrap.oncomplete (fs.js:95:15)' ] }
+75 error Please try running this command again as root/Administrator.
+76 verbose exit [ -13, true ]
+77 verbose unbuild lib/node_modules/pm2
+78 silly gentlyRm /usr/local/lib/node_modules/pm2 is being purged from base /usr/local
+79 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/pm2
